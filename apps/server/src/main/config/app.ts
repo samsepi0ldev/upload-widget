@@ -3,6 +3,7 @@ import { fastifyCors } from '@fastify/cors'
 import { fastifyMultipart } from '@fastify/multipart'
 import fastifyStatic from '@fastify/static'
 import { fastify } from 'fastify'
+
 import setupRoutes from './routes'
 
 const MAXIMUM_FILE_SIZE_IN_BYTES = 1024 * 1024 * 4 // 4mb

@@ -1,5 +1,5 @@
 import * as Collapsible from '@radix-ui/react-collapsible'
-import { Minimize2, UploadCloud } from 'lucide-react'
+import { Minimize2 } from 'lucide-react'
 import { Button } from './ui/button'
 import { UploadWidgetTitle } from './upload-widget-title'
 

@@ -188,7 +188,7 @@ pnpm lint
 
 ## License
 
-ISC
+MIT
 
 ## Author
 

@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+	  "build":"tsup-node ./src",
+    "start": "node ./dist/main/server.js",
     "dev": "tsx watch --env-file .env ./src/main/server.ts"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.4",
     "@types/node": "^25.3.0",
+    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },

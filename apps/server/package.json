@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	  "build":"tsup-node ./src",
+    "build": "tsup-node ./src",
     "start": "node ./dist/main/server.js",
-    "dev": "tsx watch --env-file .env ./src/main/server.ts"
+    "dev": "tsx watch --env-file .env ./src/main/server.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +16,14 @@
   "packageManager": "pnpm@10.29.3",
   "devDependencies": {
     "@biomejs/biome": "2.4.4",
+    "@faker-js/faker": "^10.3.0",
     "@types/node": "^25.3.0",
+    "@vitest/coverage-v8": "^4.0.18",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18",
+    "vitest-mock-extended": "^3.1.0"
   },
   "dependencies": {
     "@fastify/cors": "^11.2.0",
